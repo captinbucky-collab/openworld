@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>NEON CITY — Open World</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="game"></div>
+  <div id="hud">
+    <div class="brand">NEON CITY <span>OPEN WORLD</span></div>
+    <div class="stats">
+      <div class="stat"><small>HEALTH</small><b id="health">100</b><i><em id="healthbar"></em></i></div>
+      <div class="stat"><small>STAMINA</small><b id="stamina">100</b><i><em id="staminabar"></em></i></div>
+      <div class="stat money"><small>CASH</small><b id="money">$2,500</b></div>
+      <div class="stat"><small>FUEL</small><b id="fuel">100%</b></div>
+    </div>
+    <div class="wanted" id="wanted">☆☆☆☆☆</div>
+    <div class="mission" id="mission">MISSION: Explore Neon City</div>
+  </div>
+  <div id="crosshair">+</div>
+  <div id="prompt"></div>
+  <div id="toast"></div>
+  <div id="map" class="panel hidden"><h2>NEON CITY MAP</h2><canvas id="mapcanvas" width="420" height="420"></canvas><p>Green: you · Blue: vehicles · Gold: properties</p></div>
+  <div id="inventory" class="panel hidden"><h2>INVENTORY</h2><div id="items"></div><p>1 Pistol · 2 AK-47 · 3 Shotgun · 4 Sniper</p></div>
+  <div id="help" class="panel"><b>HOW TO PLAY</b><p>WASD move/drive · Mouse look · Shift sprint · Space jump/handbrake · Q punch · C crouch</p><p>F enter/exit car · E enter building/interact · B buy property · Click shoot · R reload · G drop · M map · Tab inventory</p><p class="hint">Click the game to capture mouse. Press ESC to release.</p><button id="start">START GAME</button></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
